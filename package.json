@@ -4,10 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "mocha"
+    "start": "nodemon --exec babel-node app.js",
+    "test": "mocha --require @babel/register --require @babel/polyfill"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
     "mocha": "^6.0.2",
-    "should": "^13.2.3"
+    "should": "^13.2.3",
+    "supertest": "^3.4.2"
   }
 }

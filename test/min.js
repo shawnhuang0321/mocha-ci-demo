@@ -1,5 +1,5 @@
 const min = require('../lib/min');
-const assert = require('assert');
+const assert = require('chai').assert;
 
 describe('#min', () => {
   it('should return the min value of the array', () => {
@@ -9,6 +9,6 @@ describe('#min', () => {
 
   it('should return undefined when array is empty', () => {
     const value = min([]);
-    assert.equal(value, undefined);
+    assert.isUndefined(value, 'min value is not undefined');
   })
 })

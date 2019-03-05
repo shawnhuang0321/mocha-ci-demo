@@ -1,5 +1,5 @@
 const max = require('../lib/max');
-const assert = require('assert');
+const assert = require('chai').assert;
 
 describe('#max', () => {
   it('should return the max value of the array', () => {
@@ -9,6 +9,6 @@ describe('#max', () => {
 
   it('should return undefined when array is empty', () => {
     const value = max([]);
-    assert.equal(value, undefined);
+    assert.isUndefined(value, 'max value is not undefined');
   })
 })
