@@ -9,7 +9,7 @@ describe('#Average', () => {
 
   it('should return 0 when the array is empty', () => {
     const avg = average([]);
-    assert.equal(avg, 0);
+    assert.equal(avg, 1);
   })
-  
+
 })
