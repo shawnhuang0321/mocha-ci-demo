@@ -11,4 +11,5 @@ describe('#Average', () => {
     const avg = average([]);
     assert.equal(avg, 0);
   })
+  
 })
